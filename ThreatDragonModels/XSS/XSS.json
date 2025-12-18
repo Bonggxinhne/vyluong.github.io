@@ -16,11 +16,910 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.5.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 370,
+              "y": 9.999999999999943
+            },
+            "size": {
+              "width": 350,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": "TB1 Internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "2aeb6d01-0500-41c0-befd-df57d436234a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB1 Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 365,
+              "y": 301
+            },
+            "size": {
+              "width": 360,
+              "height": 120
+            },
+            "attrs": {
+              "label": {
+                "text": "TB2 Application"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "76dafb9b-5d1b-4dc7-a84a-12d616c3a487",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB2 Application",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 405,
+              "y": 530.0000000000002
+            },
+            "size": {
+              "width": 280,
+              "height": 120
+            },
+            "attrs": {
+              "label": {
+                "text": "TB3 Data"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "ed3a6ebc-6bf3-4b66-9c33-a22681502b34",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB3 Data",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 389,
+              "y": 85
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser Attacker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "439ed4b2-2b0f-42e8-83cd-f499d22db0f9"
+                },
+                {
+                  "group": "right",
+                  "id": "83f1ffb5-1ce4-4c9b-9fe2-3b06e197e367"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fd7eb060-39f3-4487-b235-9507b5f91210"
+                },
+                {
+                  "group": "left",
+                  "id": "f6867a14-a8ee-478c-a88f-24f5c80639ca"
+                }
+              ]
+            },
+            "id": "2a29c485-dac0-4ac6-a9bd-2af4529ec406",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser Attacker",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 580,
+              "y": 85
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser Victim"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "439ed4b2-2b0f-42e8-83cd-f499d22db0f9"
+                },
+                {
+                  "group": "right",
+                  "id": "83f1ffb5-1ce4-4c9b-9fe2-3b06e197e367"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fd7eb060-39f3-4487-b235-9507b5f91210"
+                },
+                {
+                  "group": "left",
+                  "id": "f6867a14-a8ee-478c-a88f-24f5c80639ca"
+                }
+              ]
+            },
+            "id": "8cb39882-de64-4734-b99f-3d99966b820c",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser Victim",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "909cb7b3-cae6-4ef2-8541-4dd00975d6c8",
+                  "title": "I – Data exposure via client-side script execution",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Script can exfiltrate page data and perform actions in the user’s context; impact increases if sensitive tokens are accessible to JavaScript.",
+                  "mitigation": "HttpOnly cookies; SameSite cookies; CSP; never store secrets in localStorage/sessionStorage; limit sensitive data rendered into pages.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 515,
+              "y": 321
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Web App"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4b4b8040-6db4-4935-a450-d853e8f554a3"
+                },
+                {
+                  "group": "right",
+                  "id": "573870c3-fbe6-4931-9cf1-6e790c9c66e1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f8a0c857-a20e-4c49-abb4-f7d2f7a1c6ed"
+                },
+                {
+                  "group": "left",
+                  "id": "1286755f-beb4-45cd-b81c-50c691d1cb54"
+                }
+              ]
+            },
+            "id": "adfbf35f-bd79-4f12-ab2d-d2babb200bb6",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web App",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 485,
+              "y": 580
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Review Store"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b695e59a-af98-4f3c-9a27-d6312b1d69e9"
+                },
+                {
+                  "group": "right",
+                  "id": "bc75421a-86e8-4768-8a2c-b09e990fa69b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "14503f5d-1864-497f-a0fe-ad816a352938"
+                },
+                {
+                  "group": "left",
+                  "id": "d11d2909-45a5-40fc-a92a-8e54bcd2da35"
+                }
+              ]
+            },
+            "id": "7c666c17-f3b5-4583-9be4-f0216c603725",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "Review Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "8099088d-26fb-48a7-a36e-348e5ababadb",
+                  "title": "T – Stored payload persists and impacts multiple victims",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Once stored, the payload executes for every viewer of the product page (high scale, high repeatability).",
+                  "mitigation": "Store only sanitized HTML; moderation controls; logging for review submissions; block repeat offenders.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "POST /review (payload)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "34497a62-4a98-4d62-8482-5978027b2a42",
+                  "title": "T – Script payload injected via user-generated content submission",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attacker submits malicious HTML/JS in reviews/Q&A fields to be stored and later served to other users.",
+                  "mitigation": "Allowlist sanitization on write; strict length limits; strip disallowed tags/attributes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "POST /review (payload)"
+            ],
+            "id": "7454d6f6-91e1-466c-a4c5-651496d9457f",
+            "source": {
+              "x": 445,
+              "y": 145
+            },
+            "target": {
+              "cell": "adfbf35f-bd79-4f12-ab2d-d2babb200bb6",
+              "port": "4b4b8040-6db4-4935-a450-d853e8f554a3"
+            },
+            "vertices": [
+              {
+                "x": 445,
+                "y": 170
+              },
+              {
+                "x": 410,
+                "y": 210
+              },
+              {
+                "x": 440,
+                "y": 250
+              },
+              {
+                "x": 500,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "GET /product/<id> ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "GET /product/<id> "
+            ],
+            "id": "1eb5d4ed-11ab-41a5-9838-0cb17b16ebfc",
+            "source": {
+              "x": 645,
+              "y": 145
+            },
+            "target": {
+              "cell": "adfbf35f-bd79-4f12-ab2d-d2babb200bb6",
+              "port": "4b4b8040-6db4-4935-a450-d853e8f554a3"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store review content",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Store review content"
+            ],
+            "id": "40d2ce03-3f67-4869-a6af-285e2a90d9d7",
+            "source": {
+              "x": 544,
+              "y": 381
+            },
+            "target": {
+              "cell": "7c666c17-f3b5-4583-9be4-f0216c603725",
+              "port": "d11d2909-45a5-40fc-a92a-8e54bcd2da35"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 480
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Review data (read)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Review data (read)"
+            ],
+            "id": "855ddc84-6e08-41aa-b6a9-47f1e7926bf4",
+            "source": {
+              "x": 542,
+              "y": 381
+            },
+            "target": {
+              "cell": "7c666c17-f3b5-4583-9be4-f0216c603725",
+              "port": "bc75421a-86e8-4768-8a2c-b09e990fa69b"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 490
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTML renders review (includes review content)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0a0bc38f-2725-42c5-9454-b697a6569ad5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            },
+            "labels": [
+              "HTML renders review (includes review content)"
+            ],
+            "id": "69c21d6c-8049-4ac5-863b-1606e3f7d913",
+            "source": {
+              "cell": "adfbf35f-bd79-4f12-ab2d-d2babb200bb6",
+              "port": "573870c3-fbe6-4931-9cf1-6e790c9c66e1"
+            },
+            "target": {
+              "cell": "8cb39882-de64-4734-b99f-3d99966b820c",
+              "port": "83f1ffb5-1ce4-4c9b-9fe2-3b06e197e367"
+            },
+            "vertices": [
+              {
+                "x": 910,
+                "y": 190
+              }
+            ]
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Joshua",
-    "threatTop": 0
+    "threatTop": 5
   }
 }
