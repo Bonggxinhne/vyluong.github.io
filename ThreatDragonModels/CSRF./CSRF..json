@@ -449,25 +449,26 @@
               "threats": [
                 {
                   "id": "362c8f15-f207-41c5-aa0a-4801e6945f48",
-                  "title": "New STRIDE threat",
+                  "title": "R – Repudiation risk if actions cannot be proven",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Victims can plausibly deny initiating actions; without strong evidence, incident response and dispute resolution are weak.",
+                  "mitigation": "Audit logging (user, time, IP, endpoint); log CSRF validation result; correlation IDs; retain relevant telemetry.",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 14,
                   "score": ""
                 }
-              ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
               ],
-              "name": null
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
