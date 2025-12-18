@@ -93,13 +93,6 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -522,52 +515,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Hidden form / auto-submit",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Hidden form / auto-submit"
-            ],
-            "id": "9503d21a-db56-491a-8edc-408c3bab17b8",
-            "source": {
-              "cell": "17b09650-c628-48e5-a0c3-2d3de1c0202d",
-              "port": "54174418-441a-41ca-849b-bceed45d16fb"
-            },
-            "target": {
-              "cell": "512f2988-d762-4879-bdf1-a7ab72ec8d17",
-              "port": "40c70092-2907-4a05-85ab-c804b889f71e"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Update address/profile",
               "description": "",
               "outOfScope": false,
@@ -914,6 +861,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Joshua",
-    "threatTop": 0
+    "threatTop": 9
   }
 }
