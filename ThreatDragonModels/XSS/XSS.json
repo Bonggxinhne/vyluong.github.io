@@ -883,18 +883,23 @@
               "threats": [
                 {
                   "id": "0a0bc38f-2725-42c5-9454-b697a6569ad5",
-                  "title": "New STRIDE threat",
+                  "title": "T – DOM/checkout content tampering via stored XSS",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Stored script modifies page content (DOM) at runtime, such as altering checkout buttons, changing displayed prices, or injecting fake payment prompts, leading to fraud and user deception.",
+                  "mitigation": "Jinja auto-escape; allowlist sanitization on write; CSP (no inline scripts); avoid dangerous sinks; restrict third-party scripts.",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 5,
                   "score": ""
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTML renders review (includes review content)"
