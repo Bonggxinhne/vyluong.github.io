@@ -343,8 +343,8 @@
                 "text": "Web App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -441,19 +441,41 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "362c8f15-f207-41c5-aa0a-4801e6945f48",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 14,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -474,12 +496,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8724494a-bbef-4f6b-bb39-ee3e64134ba7",
+                  "title": "T – CSRF triggers unauthorized checkout/profile changes",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Browser automatically includes session cookies; without CSRF checks, attacker can place orders, change address/email, or update payment preferences.",
+                  "mitigation": "CSRF tokens on all state-changing endpoints; SameSite cookies; POST-only discipline for sensitive actions.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Forged POST /checkout or /profile"
@@ -499,7 +540,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -520,12 +562,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3f57b50f-abdb-423d-9bfb-3d98c8a2fe94",
+                  "title": "T – Persistent integrity damage in orders or account data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Forged requests create/modify orders and user profile records, causing fraud, delivery diversion, and customer support disputes.",
+                  "mitigation": "Confirm sensitive actions; enforce business rules; step-up auth for high-risk changes (optional); audit trails.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Update address/profile"
@@ -566,7 +627,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -587,12 +649,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "795bb3cd-04d1-4076-bef3-5c4b9cc50cba",
+                  "title": "T – Persistent integrity damage in orders or account data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Forged requests create/modify orders and user profile records, causing fraud, delivery diversion, and customer support disputes.",
+                  "mitigation": "Confirm sensitive actions; enforce business rules; step-up auth for high-risk changes (optional); audit trails.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Create order / change status"
@@ -605,6 +686,72 @@
             "target": {
               "cell": "91d0ebcc-ed85-48f2-bb14-f9340d09b443",
               "port": "b7a1297d-4974-4140-af3f-1dff859a0b58"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hidden form / auto-submit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "90b472b4-37eb-4e2d-a35f-60cb5ac71918",
+                  "title": "T – Cross-site request accepted without CSRF validation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The server accepts a state-changing request authenticated only by cookies. An attacker can trigger unintended actions (checkout, address change, profile updates) without the user’s intent.",
+                  "mitigation": "CSRF tokens on all state-changing endpoints; verify Origin/Referer; POST-only for state change; SameSite cookies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Hidden form / auto-submit"
+            ],
+            "id": "5c568115-d6a4-4221-a9fd-807719e8afe9",
+            "source": {
+              "cell": "17b09650-c628-48e5-a0c3-2d3de1c0202d",
+              "port": "54174418-441a-41ca-849b-bceed45d16fb"
+            },
+            "target": {
+              "cell": "512f2988-d762-4879-bdf1-a7ab72ec8d17",
+              "port": "40c70092-2907-4a05-85ab-c804b889f71e"
             },
             "vertices": []
           },
@@ -861,6 +1008,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Joshua",
-    "threatTop": 9
+    "threatTop": 14
   }
 }
